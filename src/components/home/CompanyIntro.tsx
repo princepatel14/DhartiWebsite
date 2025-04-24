@@ -92,7 +92,7 @@ const CompanyIntro = () => {
                 </svg>
               </a> */}
               <Link
-                to="/company"
+                to="/DhartiWebsite/company"
                 className="inline-flex items-center mt-4 text-industrial-blue font-medium hover:underline"
               >
                 Learn More About Us
