@@ -25,7 +25,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", path: "/DhartiWebsite" },
+    { name: "Home", path: "/" },
     { name: "Machines", path: "/machines" },
     { name: "Company", path: "/company" },
     { name: "Gallery", path: "/gallery" },

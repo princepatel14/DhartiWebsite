@@ -3,6 +3,7 @@ import ParallaxSection from "../animations/ParallaxSection";
 import ScrollReveal from "../animations/ScrollReveal";
 import SectionHeading from "../ui/SectionHeading";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CompanyIntro = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -39,9 +40,9 @@ const CompanyIntro = () => {
               <p className="text-industrial-gray leading-relaxed">
                 Founded in 2005, Dharati Industries began with a vision to
                 revolutionize the furniture manufacturing process through
-                innovative machinery design. What started as a small workshop has
-                grown into a leading manufacturer of advanced furniture-making
-                equipment.
+                innovative machinery design. What started as a small workshop
+                has grown into a leading manufacturer of advanced
+                furniture-making equipment.
               </p>
             </ScrollReveal>
 
@@ -50,10 +51,10 @@ const CompanyIntro = () => {
                 Our Approach
               </h3>
               <p className="text-industrial-gray leading-relaxed">
-                We combine industry expertise with technical innovation to create
-                machinery that not only meets but exceeds the expectations of our
-                clients. Each machine is designed with precision, durability, and
-                ease of operation in mind.
+                We combine industry expertise with technical innovation to
+                create machinery that not only meets but exceeds the
+                expectations of our clients. Each machine is designed with
+                precision, durability, and ease of operation in mind.
               </p>
             </ScrollReveal>
 
@@ -70,7 +71,7 @@ const CompanyIntro = () => {
             </ScrollReveal>
 
             <ScrollReveal delay={8}>
-              <a
+              {/* <a
                 href="/company"
                 className="inline-flex items-center mt-4 text-industrial-blue font-medium hover:underline"
               >
@@ -89,7 +90,27 @@ const CompanyIntro = () => {
                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                   ></path>
                 </svg>
-              </a>
+              </a> */}
+              <Link
+                to="/company"
+                className="inline-flex items-center mt-4 text-industrial-blue font-medium hover:underline"
+              >
+                Learn More About Us
+                <svg
+                  className="ml-2 h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  ></path>
+                </svg>
+              </Link>
             </ScrollReveal>
           </div>
         </div>

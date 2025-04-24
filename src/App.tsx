@@ -20,10 +20,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/DhartiWebsite">
         <AnimatePresence mode="wait">
           <Routes>
-            <Route path="/DhartiWebsite" element={<Index />} />
+            <Route path="/" element={<Index />} />
             <Route path="/machines" element={<Machines />} />
             <Route path="/machines/:slug" element={<MachineDetail />} />
             <Route path="/company" element={<Company />} />
